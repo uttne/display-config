@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
@@ -6,6 +6,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<AssemblyName>discon</AssemblyName>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 
 		<PackAsTool>true</PackAsTool>
 		<ToolCommandName>discon</ToolCommandName>
@@ -21,5 +22,10 @@
 		<RepositoryUrl>https://github.com/uttne/display-config.git</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="McMaster.Extensions.Hosting.CommandLine" Version="3.1.0" />
+	  <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
+	</ItemGroup>
 
 </Project>
